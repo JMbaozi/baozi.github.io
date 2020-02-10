@@ -26,7 +26,7 @@ footer:
 # Author 配置博主信息
 author: '江盟'
 nickname: '包子'
-bio: '游戏爱好者，LPL忠实观众，技术好奇者，网易云粉丝'
+bio: '游戏爱好者，LPL忠实观众，技术好奇者，网易云村民'
 avatar: '/assets/img/profile.png'
 
 
@@ -58,7 +58,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   weibo: 'https://weibo.com/p/1005053958305706/home?from=page_100505&mod=TAB#place'
-  email: 'baozicrd@foxmail.com'
+  email: '<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Hnx-cWR3fWx6XnhxZnN-d3IwfXFz" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>'
   instagram: '//www.instagram.com/jmbaozi'
   github: 'https://github.com/JMbaozi'
 
