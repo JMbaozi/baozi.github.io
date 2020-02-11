@@ -40,11 +40,10 @@ nightMode: true
 comments:
   disqus: false
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
-  
   gitalk: true
   gitalk_clientID: 'f3243f5bd876818b0de1'
   gitalk_Secret: '57fd6d1a21ea0c870d01892a2a31ae68641c8be9'
-  gitalk_repo: 'JMbaozi.github.io'
+  gitalk_repo: 'jmbaozi.github.io'
   gitalk_owner: 'JMbaozi'
   gitalk_admin: 'JMbaozi'
   distractionFreeMode: true
