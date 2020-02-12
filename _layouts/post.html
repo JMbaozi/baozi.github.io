@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-{% include comments.html %} 
 {% include post-head.html %}
 
 <body>
@@ -105,7 +104,7 @@
     </section>
     {% endif %}
   </section>
-
+  {% include comments.html %} 
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
