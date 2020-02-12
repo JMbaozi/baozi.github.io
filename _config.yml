@@ -49,6 +49,15 @@ comments:
   gitalk_admin: 'JMbaozi'
   distractionFreeMode: true
 
+valine_comment:
+  enable: true
+# app_id
+  leancloud_appid: bE5uulX1rjlMYfvX3bkYxRcp-gzGzoHsz
+# app_key
+  leancloud_appkey: UyMjj3WbzaiLcFB13sICVpnW
+# placeholde
+  placeholder: “Just go go"
+
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
