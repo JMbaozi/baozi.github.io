@@ -7,7 +7,7 @@ categories: 技术
 tags: 杂谈
 ---
 
-#### 我最近正在学习Python和JavaScript，浏览了很多大神的Blog，所以突发奇想，搞一个自己的Blog，但是由于水平有限，我选择了非常简单的一种。
+#### 我最近正在学习Python，浏览了很多大神的Blog，所以突发奇想，搞一个自己的Blog，但是由于水平有限，我选择了非常简单的一种。
 
 #### 非常感谢
 * Web:[Jekyll](http://jekyllthemes.org/)
@@ -20,3 +20,5 @@ tags: 杂谈
 * 做的事情
 * 杂谈感悟
 * Other
+
+![picture](https://photo.feicdn.cn/5e44ec286a71d6061147d565_1581577407021)
