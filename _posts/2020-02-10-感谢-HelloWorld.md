@@ -7,7 +7,7 @@ categories: 技术
 tags: 杂谈
 ---
 
-<p>http://yizhibi.6chemical.com/lucyBlog/xianrendege.mp3</p>
+<p>http://m801.music.126.net/20200214141100/efecf2a295160218c989aba08dfabb4b/jdyyaac/0e5c/540c/055e/962a7d6dbecfc3bb286724fcf5649075.m4a</p>
 #### 我最近正在学习Python，浏览了很多大神的Blog，所以突发奇想，搞一个自己的Blog，但是由于水平有限，我选择了非常简单的一种。
 
 #### 非常感谢
