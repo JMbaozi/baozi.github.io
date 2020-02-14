@@ -5,9 +5,9 @@ subtitle: '第一次建立博客'
 date: 2020-02-10
 categories: 技术
 tags: 杂谈
+music-id: 208902
 ---
 
-<p>http://m10.music.126.net/20200214153359/4cae359df4d5556b0c145072bc649748/ymusic/7513/b5b4/63cb/d2fce41a5aa3efef23233b1e29455b79.mp3</p>
 #### 我最近正在学习Python，浏览了很多大神的Blog，所以突发奇想，搞一个自己的Blog，但是由于水平有限，我选择了非常简单的一种。
 
 #### 非常感谢
