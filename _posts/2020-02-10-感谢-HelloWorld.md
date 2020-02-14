@@ -7,7 +7,8 @@ categories: 技术
 tags: 杂谈
 ---
 
-<p>https://weibo.com/p/10151501_60700574?from=page_101515_player&source_id=1040</p>
+<p>http://music.163.com/song/media/outer/url?id=562598065.mp3</p>
+
 #### 我最近正在学习Python，浏览了很多大神的Blog，所以突发奇想，搞一个自己的Blog，但是由于水平有限，我选择了非常简单的一种。
 
 #### 非常感谢
