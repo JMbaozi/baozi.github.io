@@ -49,7 +49,7 @@ valine_comment:
 # app_key
   leancloud_appkey: UyMjj3WbzaiLcFB13sICVpnW
 # placeholde
-  placeholder: "我是输入框，点我评论或者回复(*^_^*)"
+  placeholder: "我是输入框，点我评论或回复(*^_^*)"
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
