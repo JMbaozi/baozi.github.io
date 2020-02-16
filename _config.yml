@@ -50,8 +50,7 @@ valine_comment:
   leancloud_appkey: UyMjj3WbzaiLcFB13sICVpnW
 # placeholde
   placeholder: "我是输入框，点我评论或回复(*^_^*)"
-# pageSize  
-  pageSize: 10 # pagination size
+
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
