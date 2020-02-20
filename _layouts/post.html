@@ -105,8 +105,10 @@
     </section>
     {% endif %}
   </section>
-  <!--网页评论-->
-  {% include comments.html %}
+  <!--文章评论-->
+  <ul class="tags-list" style="list-style-type: none;padding: auto;">
+  {% include comments.html %}	
+  </ul>  
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
