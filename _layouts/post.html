@@ -106,9 +106,12 @@
     {% endif %}
   </section>
   <!--文章评论-->
-  <ul class="tags-list" style="list-style-type: none;padding: 40px;">
-  {% include comments.html %}	
-  </ul>  
+  <section class="tags-content" style="margin-top: 0px">
+      <ul class="tags-list" style="list-style-type: none;padding: auto;">
+		  <h1>Welcome to leave a message✨</h1>
+	  {% include comments.html %}	
+      </ul>
+  </section>
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
