@@ -22,7 +22,8 @@ title: log
 		  {% endif %}
 		{% endunless %}
 
-		<li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a><br/></li>
+		<li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+		<br/>
 	  {% endfor %}
 	</ul>
 	<!--文章评论-->

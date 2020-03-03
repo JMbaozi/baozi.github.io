@@ -18,9 +18,9 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
-  about: '/about.html'
+  log: '/log.html'  
   comment: '/Comment.html'
-  log: '/log.html'
+  about: '/about.html'
 
 # Footer
 footer:
