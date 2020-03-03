@@ -10,22 +10,22 @@ music-id: 28560087
 
 > 参考：https://www.itrhx.com/2019/08/01/A27-image-hosting/
 
-我目前一直用[即刻图床](https://jiketuchuang.com/)，上传速度特别快，但是我发现一次性上传图片过多会又部分崩掉，由于作者没有公开源码，所以具体的上传机制我也不清楚。
+我目前一直用[即刻图床](https://jiketuchuang.com/)，上传速度特别快，但是我发现一次性上传图片过多会有部分失效，估计是被删除了。由于作者没有公开源码，所以具体的上传机制我也不清楚。
 
 今天我逛博客看到了这篇，用 **Github+jsDelivr+PicGo** 打造稳定快速、高效免费图床
 
 我之前想到过用Github库做免费仓库，但是访问速度太差劲了，直到今天我发现这篇，顿时解决了速度慢的问题，太赞了。下面为**实例**和**教程**
 
 #### 实例
-* 
+
 ![](https://cdn.jsdelivr.net/gh/JMbaozi/Blogimg/Pictures/89a835f6790c30c5725086b86b602060.png)
-* 
+
 ![](https://cdn.jsdelivr.net/gh/JMbaozi/Blogimg/Pictures/87e25bda286bd77ea4d4c63ba73216e8.jpg)
-* 
+
 ![](https://cdn.jsdelivr.net/gh/JMbaozi/Blogimg/Pictures/3ce807c0c64dac135b05b16458a2fd17.png)
-* 
+
 ![](https://cdn.jsdelivr.net/gh/JMbaozi/Blogimg/Pictures/55f7a140a35c58861d7fdf88cb4634de.png)
-* 
+
 ![](https://cdn.jsdelivr.net/gh/JMbaozi/Blogimg/Pictures/2a2b25399f452ce8cb90aaa41e79f2dd.png)
 
 #### 教程
