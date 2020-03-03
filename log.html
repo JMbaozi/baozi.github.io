@@ -1,29 +1,26 @@
 ---
 layout: post
 title: log
-permalink: /tags/
+permalink: /archives/
 ---
 
 {% include header.html %}
 
-<ul class="tags">
-    {% for tag in site.tags %}
-    <li>
-        <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>
-    </li>
-    {% endfor %}
-</ul>
+<ul>
+  {% for post in site.posts %}
 
-<ul class="listing">
-    {% for tag in site.tags %}
-    <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
-    {% for post in tag[1] %}
-    <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-{% endfor %}
+    {% unless post.next %}
+      <h2>{{ post.date | date: '%Y年' }}</h2>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h2>{{ post.date | date: '%Y年' }}</h2>
+      {% endif %}
+    {% endunless %}
+
+    <li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
 </ul>
 
 {% include footer.html %}
