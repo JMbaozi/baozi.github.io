@@ -2,24 +2,28 @@
 layout: default
 title: log
 ---
-
 {% include header.html %}
+<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+    <h2>归档</h2>
 
-<ul>
-  {% for post in site.posts %}
 
-    {% unless post.next %}
-      <h2>{{ post.date | date: '%Y年' }}</h2>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y年' }}</h2>
-      {% endif %}
-    {% endunless %}
+</div>
+<main class="tags-content" style="margin-top: 0px">
+	<ul>
+	  {% for post in site.posts %}
 
-    <li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+		{% unless post.next %}
+		  <h2>{{ post.date | date: '%Y年' }}</h2>
+		{% else %}
+		  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+		  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+		  {% if year != nyear %}
+			<h2>{{ post.date | date: '%Y年' }}</h2>
+		  {% endif %}
+		{% endunless %}
 
+		<li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+</main>
 {% include footer.html %}
