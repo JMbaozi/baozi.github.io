@@ -18,7 +18,7 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
-  log: '/log.html'  
+  archive: '/archive.html'  
   comment: '/Comment.html'
   about: '/about.html'
 
@@ -27,8 +27,8 @@ footer:
   since: 2020
 
 # Author 配置博主信息
-author: '江盟'
-nickname: '包子'
+author: 'kaeyleo'
+nickname: 'JMbaozi'
 bio: '游戏爱好者，LPL忠实观众，技术好奇者，网易云村民'
 avatar: '/assets/img/touxiang.jpeg'
 
