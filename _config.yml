@@ -27,7 +27,8 @@ footer:
   since: 2020
 
 # Author 配置博主信息
-author: 'kaeyleo'
+#原author: 'kaeyleo'
+author: '江盟'
 nickname: 'JMbaozi'
 bio: '游戏爱好者，LPL忠实观众，技术好奇者，网易云村民'
 avatar: '/assets/img/touxiang.jpeg'
