@@ -8,10 +8,6 @@
 
 #### [在线预览 Live Demo →](http://liaokeyu.com/)
 
-![](screenshot/jekyll-theme-h2o-realhome.jpg)
-
-![](screenshot/jekyll-theme-h2o-realm.png)
-
 如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
 
 If you like this theme or using it, please give a ⭐️ for motivation ;)
