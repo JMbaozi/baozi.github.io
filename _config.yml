@@ -2,7 +2,7 @@
 title: '包子丶'
 description: '很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: ''
-url: 'https://jmbaozi.top/' # your host
+url: 'https://baozi.run/' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -30,7 +30,7 @@ footer:
 #原author: 'kaeyleo'
 author: '江盟'
 nickname: 'JMbaozi'
-bio: '游戏爱好者，LPL忠实观众，技术好奇者，网易云村民'
+bio: '游戏爱好者，LPL忠实观众，技术好奇员，网易云村民'
 avatar: '/assets/img/touxiang.jpeg'
 
 
