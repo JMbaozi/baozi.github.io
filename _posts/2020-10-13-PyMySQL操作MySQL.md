@@ -10,7 +10,7 @@ music-id: 536870202
 
 PyMySQL是在 Python3.x 版本中用于连接 MySQL 服务器的一个库，可以简单地操作MySQL数据库。安装方法：```pip install pymysql```，使用方法```import pymysql```。使用之前需要先安装并配置好MySQL，具体方法可以参考[网络教程](https://www.runoob.com/mysql/mysql-install.html)。
 
-> python及sql代码地址：[https://github.com/JMbaozi/absorb/tree/master/program/python_use_mysql](https://github.com/JMbaozi/absorb/tree/master/program/python_use_mysql)
+> python及sql代码地址：[点我](https://github.com/JMbaozi/absorb/tree/master/program/python_use_mysql)
 
 以下操作内容为学生信息数据库data_school中的class_data表，表建立方式：
 ```sql
