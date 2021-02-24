@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6Xfh7Gd1CYItnNTegU1PrUHB7UmARAMi"></script>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+p{margin-left:5px; font-size:14px;}
+#r1{ width:100%; max-width:1300px; height:500px; text-align:center; }
+#r2{ width:100%; max-width:1300px; height:50px; text-align:center; }
+#r3{ color:#999}
+</style>
+<body style="background-image:url(img/18I58PICdSi_1024.jpg); background-repeat:no-repeat; background-size:100% 600px">
+<h2 id="r2">标注您当前位置，并添加信息</h2>
+<div id="r1">
+<form action="baidutj.php" method="post">
+<div>地   址：<input type="text" name="dizhi" id='di' /></div>
+<div>经纬度：<input type="text" name="du" id="result_"/></div>
+<div>标   题：<input type="text" name="biao" /></div>
+<div>电   话：<input type="text" name="dian" /></div>
+<br />
+<div><input type="submit" value="标注" /></div>
+</form>
+<br />
+<p id="r3">注：地址和经纬度取您的实时位置,标注后会显示百度地图</p>
+</div>
+<div id="allmap" style="display:none"></div>
+</body>
+<script type="text/javascript">
+        
+        
+        
+        
+
+
+var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            
+            //alert('您的位置：'+r.point.lng+','+r.point.lat);
+            $("#result_").val(r.point.lng+','+r.point.lat);
+            
+            
+    
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(r.point.lng,r.point.lat);
+        map.centerAndZoom(point,12);
+        var geoc = new BMap.Geocoder();    
+    
+        geoc.getLocation(point, function(rs){
+            var addComp = rs.addressComponents;
+            //alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+            $("#di").val(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+        });            
+        
+        
+            
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    },{enableHighAccuracy: true}) 
+
+
+</script>    
+</html>

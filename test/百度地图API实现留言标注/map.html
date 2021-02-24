@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap{width:100%;height:500px; border:1px solid #000;}
+        p{margin-left:5px; font-size:14px;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6Xfh7Gd1CYItnNTegU1PrUHB7UmARAMi"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <title>给多个点添加信息窗口</title>
+</head>
+<body background="img/4ef34db0af8b9c924670415e46ae6326.jpg">
+<h2>地图显示</h2>
+    <div id="allmap"></div>
+    
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能    
+    map = new BMap.Map("allmap");
+    map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+    map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+    map.addControl(new BMap.OverviewMapControl({ isOpen: true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT }));   //右下角，打开
+    map.enableScrollWheelZoom(true);    //启用滚轮放大缩小，默认禁用
+    map.centerAndZoom(new BMap.Point(118.024491,36.812252), 15);
+    var data_info = [
+<?php    
+$db = new MySQLi("localhost","root","726","ziyuan");
+$sqla = "select jingwei,dizhi,biaoti,tem from ditu ";
+$result = $db->query($sqla);
+$attra=$result->fetch_all(); 
+foreach($attra as $v)
+{    
+    
+    
+    
+echo"    [{$v[0]},'地址：{$v[1]}<br/>标题：{$v[2]}<br/>电话：{$v[3]}'],
+        
+                    
+    ";
+}
+?>
+];
+    var opts = {
+                width : 350,     // 信息窗口宽度
+                height: 100,     // 信息窗口高度
+                title : "信息窗口" , // 信息窗口标题
+                enableMessage:true//设置允许信息窗发送短息
+               };
+    for(var i=0;i<data_info.length;i++){
+        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+        var content = data_info[i][2];
+        map.addOverlay(marker);               // 将标注添加到地图中
+        addClickHandler(content,marker);
+    }
+    function addClickHandler(content,marker){
+        marker.addEventListener("click",function(e){
+            openInfo(content,e)}
+        );
+    }
+    function openInfo(content,e){
+        var p = e.target;
+        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    }
+</script>
