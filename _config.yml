@@ -20,6 +20,7 @@ nav:
   tags: '/tags.html'
   archive: '/archive.html'  
   comment: '/Comment.html'
+  friends: '/friends/index.html'
   about: '/about.html'
 
 # Footer
