@@ -28,7 +28,12 @@ music-id: 1839119892
 
 在对警报进行评估时，首先要确保警报在事件漏报率以及警报成功率上均优于随机猜测，因此首先要对警报的事件漏报率和警报成功率分别进行显著性检验。事件漏报率的 p-value 如下式所示：
 
-$\mathrm{P} 1=\sum_{\mathrm{i}=\mathrm{h}}^{\mathrm{N}}\left[\left(\begin{array}{c}\mathrm{N} \\ \mathrm{i}\end{array}\right)\left(\tau^*\right)^{\mathrm{i}}\left(1-\tau^*\right)^{\mathrm{N}-\mathrm{i}}\right]$
+$$
+\mathrm{P} 1=\sum_{\mathrm{i}=\mathrm{h}}^{\mathrm{N}}\left[\left(\begin{array}{c}
+\mathrm{N} \\
+\mathrm{i}
+\end{array}\right)\left(\tau^*\right)^{\mathrm{i}}\left(1-\tau^*\right)^{\mathrm{N}-\mathrm{i}}\right]
+$$
 
 原假设H0：该组警报的事件漏报率与随机猜测无异。当P1 ≪ α，且α ≪ 1时，拒绝原假设，即该组警报从事件漏报率角度要优于随机猜测。
 
